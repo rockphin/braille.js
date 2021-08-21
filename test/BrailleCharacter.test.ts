@@ -2,31 +2,36 @@ import { expect } from 'chai';
 import BrailleCharacter from '../lib/structures/BrailleCharacter';
 
 describe('Braille Character', () => {
-  it('6 dot array to dot number', () => {
+  it('6 array', () => {
     expect(
-      BrailleCharacter.dotArrayToDotNumber([
-        false,
-        false,
-        true,
-        true,
-        true,
-        false,
-      ]),
-    ).to.be.equal('345');
+      new BrailleCharacter([true, true, true, true, true, true]).toString(),
+    ).to.be.equal('⠿');
   });
-
-  it('8 dot array to dot number', () => {
+  it('8 array', () => {
     expect(
-      BrailleCharacter.dotArrayToDotNumber([
-        false,
-        false,
-        true,
+      new BrailleCharacter([
         true,
         true,
         false,
+        true,
         false,
         true,
-      ]),
-    ).to.be.equal('3458');
+        false,
+        true,
+      ]).toString(),
+    ).to.be.equal('⢫');
+  });
+  it('index', () => {
+    // '\u28a3'
+    expect(new BrailleCharacter(0xa3).toString()).to.be.equal('⢣');
+  });
+  it('dot index', () => {
+    expect(new BrailleCharacter('13245').toString()).to.be.equal('⠟');
+  });
+  it('dot binary', () => {
+    expect(new BrailleCharacter('010001').toString()).to.be.equal('⠢');
+  });
+  it('braile', () => {
+    expect(new BrailleCharacter('⣛').toString()).to.be.equal('⣛');
   });
 });
