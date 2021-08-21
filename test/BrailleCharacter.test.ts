@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import BrailleCharacter from '@lib/structures/BrailleCharacter';
+import BrailleCharacter from '../lib/structures/BrailleCharacter';
 
 describe('Braille Character', () => {
   it('6 dot array to dot number', () => {
