@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@lib/*": ["./*"]
+    },
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./lib"],
+  "exclude": ["node_modules", "tests"]
+}

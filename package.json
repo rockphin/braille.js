@@ -1,0 +1,22 @@
+{
+  "name": "braille.js",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && tscpaths -p tsconfig.tscpaths.json -s dist -o dist",
+    "start": "nodemon",
+    "test": "mocha -r ts-node/register 'test/**/*.test.ts",
+    "test:coverage": "nyc mocha -r ts-node/register 'test/**/*.test.ts'"
+  },
+  "keywords": [
+    "braille",
+    "braille.js"
+  ],
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  }
+}
