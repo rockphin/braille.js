@@ -20,6 +20,7 @@
     "chai": "^4.3.4",
     "mocha": "^9.1.0",
     "nodemon": "^2.0.12",
+    "nyc": "^15.1.0",
     "ts-node": "^10.2.1",
     "tsconfig-paths": "^3.10.1",
     "tscpaths": "^0.0.9",
