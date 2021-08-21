@@ -3,7 +3,7 @@
     "target": "ES5",
     "module": "commonjs",
     "strict": true,
-    "baseUrl": "./src",
+    "baseUrl": "./lib",
     "paths": {
       "@lib/*": ["./*"]
     },
@@ -12,6 +12,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["./lib"],
-  "exclude": ["node_modules", "tests"]
+  "include": ["./lib", "./test"],
+  "exclude": ["node_modules"]
 }
