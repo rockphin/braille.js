@@ -5,6 +5,5 @@
 module.exports = {
   require: 'ts-node/register',
   spec: ['test/**/*.test.ts'],
-  watch: true,
   'watch-files': ['lib/**/*.ts', 'test/**/*.test.ts'],
 };
