@@ -3,7 +3,7 @@
 // --watch-extensions ts
 // test/**/*.ts
 module.exports = {
-  require: 'ts-node/register',
+  require: ['ts-node/register', 'tsconfig-paths/register'],
   spec: ['test/**/*.test.ts'],
   'watch-files': ['lib/**/*.ts', 'test/**/*.test.ts'],
 };
