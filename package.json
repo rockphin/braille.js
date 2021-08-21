@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc && tscpaths -p tsconfig.tscpaths.json -s dist -o dist",
     "start": "nodemon",
-    "test": "mocha -r ts-node/register 'test/**/*.test.ts",
+    "test": "mocha -r ts-node/register 'test/**/*.test.ts'",
     "test:coverage": "nyc mocha -r ts-node/register 'test/**/*.test.ts'"
   },
   "keywords": [
