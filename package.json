@@ -15,6 +15,10 @@
     "braille",
     "braille.js"
   ],
+  "repository": "https://github.com/rockphin/braille.js",
+  "bugs": {
+    "url": "https://github.com/rockphin/braille.js/issues"
+  },
   "devDependencies": {
     "@types/chai": "^4.2.21",
     "@types/mocha": "^9.0.0",
