@@ -9,7 +9,8 @@
     "start": "nodemon",
     "test": "mocha",
     "test:watch": "mocha --watch",
-    "test:coverage": "nyc mocha"
+    "test:coverage": "nyc mocha",
+    "prepublish": "yarn build"
   },
   "keywords": [
     "braille",
